@@ -1,0 +1,47 @@
+header {
+    
+}
+
+.eye-catch{
+    height:30px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+}
+
+.logo img{
+    display: flex;
+    justify-content: center;
+}
+
+.menu-list{
+    padding-left: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: purple;
+    color: white;
+    width: 260px;
+    
+}
+
+li {
+}
+
+body {
+
+}
+
+.garden-logo img{
+    top: 10px;
+    height: auto;
+    width: 300px;
+}
+
+.History h2 {
+    color: grey;
+}
