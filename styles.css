@@ -45,3 +45,9 @@ body {
 .History h2 {
     color: grey;
 }
+
+footer {
+    background-color: purple;
+    color: white;
+    
+}
