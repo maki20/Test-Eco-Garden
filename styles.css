@@ -1,3 +1,4 @@
+
 header {
     
 }
@@ -17,6 +18,7 @@ header {
 
 .menu-list{
     padding-left: 10px;
+    position: fixed;
 }
 
 ul {
@@ -44,6 +46,23 @@ body {
 
 .History h2 {
     color: grey;
+}
+
+.body-wraps {
+    margin: 0px;
+
+}
+
+.images {
+    height: auto;
+    width: 325px;
+}
+
+.Lavender-title {
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+
 }
 
 footer {
