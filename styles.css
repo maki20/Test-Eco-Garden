@@ -1,4 +1,5 @@
 
+
 header {
     
 }
@@ -8,17 +9,19 @@ header {
     width: 100%;
     background-color: white;
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    font-family: ;
 }
 
-.logo img{
+.logo{
     display: flex;
     justify-content: center;
 }
 
 .menu-list{
     padding-left: 10px;
-    position: fixed;
+    position: fix;
+    width: 359px;
 }
 
 ul {
@@ -27,11 +30,16 @@ ul {
     list-style: none;
     background-color: purple;
     color: white;
-    width: 260px;
+    margin-left: 0px;
+    
     
 }
 
 li {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+
 }
 
 body {
@@ -41,34 +49,50 @@ body {
 .garden-logo img{
     top: 10px;
     height: auto;
-    width: 300px;
 }
 
 .History h2 {
     color: grey;
 }
 
-.body-wraps {
-    margin: 0px;
+.berries {
+    margin-top: 0px;
 
+}
+
+.berries h1{
+    text-align: center;
 }
 
 .images {
     height: auto;
-    width: 325px;
+    width: 359px;
 }
 
-.Lavender-title {
-  text-align: center;
-  font-size: 30px;
-  margin: 0;
-
+.Lavender {
+    align-items: center;
 }
+
+
 
 footer {
     width: auto;
     height: 300px;
     background-color: purple;
     color: white;
+
+}
+
+
+
+.SNS {
+    text-align: center;
+}
+
+.snslogos {
+    margin-top:33px;
+    width:50px;
+    height:50px;
+    padding: 10px;
 
 }
