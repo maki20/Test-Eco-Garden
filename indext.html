@@ -10,22 +10,29 @@
 
 <header>
 <div class="eye-catch">Organic crops from Connecticut since 1991</div>
-<i class="material-icons" onclick="toggleMenu('nav');" id="menu-list">menu</i>
+
+<div id="nav-drawer">
+  <input id="nav-input" type="checkbox" class="nav-unshown">
+  <label id="nav-open" for="nav-input"><span></span></label>
+  <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+  <div id="nav-content">
+    <ul>
+      <li>WHO WE ARE</li>
+      <li>PRODUCTS</li>
+      <li>SHOP</li>
+      <li>EVENTS</li>
+      <li>CONTACT US</li>
+     </ul>
+
+  </div>
+</div>
+
 <div class="logo">
     <img src="./Assets/Logo.jpeg" width="300px">
 </div>
 
-<div class="menu-list">
-  <ul>
-   <li>WHO WE ARE</li>
-   <li>PRODUCTS</li>
-   <li>SHOP</li>
-   <li>Events</li>
-   <li>CONTACT US</li>
-  </ul>
 
 
-</div>
 
 
 </header>
@@ -63,19 +70,7 @@
 
   </div>
 
-  <script>
-  function toggleMenu(id) {
-    let nav = document.getElementById(id);
-    let menu = document.getElementById("menu-list");
-    if (nav.style.display == "flex") {
-      nav.style.display = "none";
-      menu.innerText = "menu";
-    } else {
-      nav.style.display = "flex";
-      menu.innerText = "close";
-    }
-  }
-</script>
+  
     
 </body>
 
@@ -90,9 +85,25 @@
   <div class="address">
    <h3>Location :</h3> 
    <h4>276 Leavenworth Rd, Shelton, CT 06484</h4>
-   <h3>Hours</h3>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.8741188342456!2d-73.15232924875022!3d41.333350579167394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7e1a5b3c368fb%3A0x5a0eafdd793edcd!2sGuy&#39;s%20Eco-Garden!5e0!3m2!1sja!2sus!4v1602447873184!5m2!1sja!2sus" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
    
   </div>
+
+  <div class = "hours">
+    <h3>Hours : </h3>
+    <h4>Mon - Fri, 9am - 5pm</h4>
+    <h4>Sat & Sun, 9am - 6pm</h4>
+  </div>
+
+  <form>
+   <h3 class="email">Email</h3>
+   <input type=email id="email" class="email" />
+  </form>
+
+  <form>
+    <h3 class="your-message">Your message</h3>
+    <textarea id="message" name="Your message" height="5em" cols="43"></textarea>
+  </form>
 
   <div class="sns">Follow Us!  </div>
 
