@@ -19,9 +19,9 @@ header {
 }
 
 .menu-list{
-    padding-left: 10px;
-    position: fix;
+    display:none;
     width: 359px;
+    
 }
 
 ul {

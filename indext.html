@@ -10,11 +10,12 @@
 
 <header>
 <div class="eye-catch">Organic crops from Connecticut since 1991</div>
+<i class="material-icons" onclick="toggleMenu('nav');" id="menu-list">menu</i>
 <div class="logo">
     <img src="./Assets/Logo.jpeg" width="300px">
 </div>
 
-<div class="menu list">
+<div class="menu-list">
   <ul>
    <li>WHO WE ARE</li>
    <li>PRODUCTS</li>
@@ -61,6 +62,20 @@
   </div>
 
   </div>
+
+  <script>
+  function toggleMenu(id) {
+    let nav = document.getElementById(id);
+    let menu = document.getElementById("menu-list");
+    if (nav.style.display == "flex") {
+      nav.style.display = "none";
+      menu.innerText = "menu";
+    } else {
+      nav.style.display = "flex";
+      menu.innerText = "close";
+    }
+  }
+</script>
     
 </body>
 
