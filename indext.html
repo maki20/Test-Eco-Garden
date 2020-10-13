@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
     <title>Guy's Eco-Garden</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
 </head>
 
 <header>
@@ -49,16 +51,55 @@
 
   <div class ="berries">
     <h1>Berries</h1>
-    <img src="./Assets/strawberry!.jpeg" class = "images">
-    <img src="./Assets/Berries cover!.jpg" class = "images">
-    <img src="./Assets/Sweert berries!.jpg" class = "images">
-  </div>    
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./Assets/strawberry!.jpeg" class = "images" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./Assets/Berries cover!.jpg" class = "images" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./Assets/Berries on trees!.jpg" class = "images" alt="">
+          </div>
+      </div>
+  
+      <!-- ページネーション -->
+      <div class="swiper-pagination swiper-pagination-white"></div>
+  
+      <!-- 矢印ボタン -->
+      <div class="swiper-button-prev swiper-button-white"></div>
+      <div class="swiper-button-next swiper-button-white"></div>
+  </div>
+　
+</div>  
     
   <div class ="vegetables">
     <h1>FRUITS,<br>VEGETABLES <br>& GARLIC</h1>
-    <img src="./Assets/Vegetables.jpg" class = "images">
-    <img src="./Assets/Crops!.jpeg" class = "images">
-    <img src="./Assets/black garic.jpeg" class = "images">
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./Assets/Vegetables.jpg" class = "images" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./Assets/Crops!.jpeg" class = "images" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./Assets/black garic.jpeg" class = "images" alt="">
+          </div>
+      </div>
+  
+      <!-- ページネーション -->
+      <div class="swiper-pagination swiper-pagination-white"></div>
+  
+      <!-- 矢印ボタン -->
+      <div class="swiper-button-prev swiper-button-white"></div>
+      <div class="swiper-button-next swiper-button-white"></div>
+  </div>
+
+   
 
   </div>
   
@@ -70,9 +111,27 @@
 
   </div>
 
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      loop: true,
+      effect: 'fade',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      // 3秒毎に自動でスライドする
+      autoplay: {
+        delay: 3000,
+      },
+    });
+    </script>
   
     
-</body>
+
 
 <footer>
 
@@ -117,5 +176,6 @@
 
 </footer>
 
+</body>
 
 </html>

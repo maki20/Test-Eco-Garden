@@ -137,6 +137,10 @@ body {
     text-align: center;
 }
 
+.swiper-container {
+  height: 250px;
+}
+
 .images {
     height: auto;
     width: 359px;
