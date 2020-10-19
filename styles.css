@@ -137,6 +137,13 @@ body {
     text-align: center;
 }
 
+
+.vegetables h1 {
+   margin-top: 0px;
+   text-align: center;
+}
+
+
 .swiper-container {
   height: 250px;
 }
@@ -147,7 +154,12 @@ body {
 }
 
 .Lavender {
-    align-items: center;
+    text-align: center;
+}
+
+.croft-logo {
+  text-align: center;
+  margin: 0 auto;
 }
 
 
